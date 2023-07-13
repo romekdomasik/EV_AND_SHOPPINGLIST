@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".NewArticleFragment">
+
+
+    <TextView
+        android:id="@+id/labelNom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nom : "
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/editNom"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="49dp" />
+
+    <EditText
+        android:id="@+id/editNom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/labelNom"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="30dp"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="81dp" />
+
+    <TextView
+        android:id="@+id/labelQuantite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantité : "
+        app:layout_constraintTop_toBottomOf="@id/editNom"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="147dp" />
+
+    <EditText
+        android:id="@+id/editQuantite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/labelQuantite"
+        app:layout_constraintStart_toStartOf="@id/labelQuantite"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="185dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/editQuantite"
+        app:layout_constraintStart_toStartOf="@id/editQuantite"
+        android:layout_marginTop="50dp"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="275dp" >
+        <RadioButton
+            android:id="@+id/btnNourriture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nourriture"/>
+        <RadioButton
+            android:id="@+id/btnBoisson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Boisson"/>
+        <RadioButton
+            android:id="@+id/btnHygiene"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hygiene"/>
+        <RadioButton
+            android:id="@+id/btnMaison"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maison"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnEnregistrer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enregistrer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="651dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

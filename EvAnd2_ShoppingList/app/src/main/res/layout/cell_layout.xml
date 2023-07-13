@@ -1,0 +1,46 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/articleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="article : "
+       app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="5dp"/>
+    <TextView
+        android:id="@+id/articleResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="article"
+        app:layout_constraintStart_toEndOf="@id/articleLabel"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="5dp"/>
+    <TextView
+        android:id="@+id/qtLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="quantité : "
+        app:layout_constraintTop_toBottomOf="@id/articleLabel"
+        android:padding="5dp"/>
+    <TextView
+        android:id="@+id/qtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="article"
+        app:layout_constraintStart_toEndOf="@id/qtLabel"
+        app:layout_constraintTop_toBottomOf="@id/articleResult"
+        android:padding="5dp"/>
+    <ImageView
+        android:id="@+id/imageArticle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
